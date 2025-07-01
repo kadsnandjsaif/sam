@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mobileTab">
+      <div class="mobileTab__left">
+        <button class="burger-btn" id="burgerBtn" aria-label="Открыть меню">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="6" width="32" height="4" rx="2" fill="#181818"/>
+            <rect y="14" width="32" height="4" rx="2" fill="#181818"/>
+            <rect y="22" width="32" height="4" rx="2" fill="#181818"/>
+          </svg>
+        </button>
+        <img src="image/image_top_tab/logo.svg" alt="logo" class="mobileTab__logo">
+      </div>
+    </div>
+    <!-- Overlay mobile menu -->
+    <div class="mobileMenuOverlay" id="mobileMenuOverlay">
+      <div class="mobileMenu">
+        <button class="mobileMenu__close" id="mobileMenuClose" aria-label="Закрыть меню">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="8" y1="8" x2="24" y2="24" stroke="#181818" stroke-width="3" stroke-linecap="round"/>
+            <line x1="24" y1="8" x2="8" y2="24" stroke="#181818" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <div class="mobileMenu__list">
+          <a href="#" class="mobileMenu__item">Главная</a>
+          <a href="#" class="mobileMenu__item">Каталог</a>
+          <a href="#" class="mobileMenu__item">О нас</a>
+          <a href="#" class="mobileMenu__item">Отзывы</a>
+          <a href="#" class="mobileMenu__item">Как заказать</a>
+          <div class="mobileMenu__contacts">
+            <a href="tel:+79999999999" class="mobileMenu__contact">+7 (999) 999-99-99</a>
+            <a href="#" class="mobileMenu__contact">telegram</a>
+            <a href="#" class="mobileMenu__contact">whatsapp</a>
+          </div>
+          <button class="mobileMenu__btn">Написать нам</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="topTab">
+            <div class="topSection">
+                <img src="image/image_top_tab/logo.svg" alt="">  
+              </div>
+      
+              <div class="topSection">
+                  <div class="topSection-item">Главная</div>
+                  <div class="topSection-item">Каталог</div>
+                  <div class="topSection-item">О нас</div>
+                  <div class="topSection-item">Отзывы</div>
+                  <div class="topSection-item">Как заказать</div>
+              </div>
+      
+              <div class="topSection">
+                  <div class="topSection-item" style=" font-weight: 600;">+7 (999) 999-99-99</div>
+                  <div class="topSection-item" style=" font-weight: 600;">telegram</div>
+                  <div class="topSection-item" style=" font-weight: 600;">whatsapp</div>
+              </div>
+      
+              <div class="topSection">
+                <div class="topSection-item"></div>
+                  <button class="topSection-button">
+                     Написать нам
+                  </button>
+              </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+    <div class="main-section">
+      <div class="main-section__left">
+        <h1 class="main-title">
+          НАЙДИТЕ ВЫГОДНОЕ<br>
+          ПРЕДЛОЖЕНИЕ ПО УПАКОВКЕ<br>
+          <span class="main-title__highlight">ЗА ПАРУ МИНУТ</span>
+        </h1>
+        <ul class="main-list">
+          <li><img src="image/image_top_card/calculate.svg" alt=""> Оптовые цены</li>
+          <li><img src="image/image_top_card/opt.svg" alt=""> Честный калькулятор расчета отпускной цены</li>
+          <li><img src="image/image_top_card/info.svg" alt=""> Краткая и понятная информация о каждой товарной единице</li>
+        </ul>
+        <button class="main-btn">Скачать каталог</button>
+      </div>
+      <div class="main-section__right">
+        <div class="slider desktop-slider">
+          <div class="slider-card">
+            <div class="slider-card__bg"></div>
+            <div class="slider-card__content">
+              <div class="slider-card__top">
+                <button class="slider-card__tag">Акции и бонусы</button>
+                <div class="slider-card__controls">
+                  <span class="slider-card__nav slider-card__nav--prev">Назад</span>
+                  <span class="slider-card__dots">
+                    <span class="slider-card__dot"></span>
+                    <span class="slider-card__dot active"></span>
+                    
+                  </span>
+                  <span class="slider-card__nav slider-card__nav--next">Дальше</span>
+                </div>
+              </div>
+              <div class="slider-card__main">
+                <div class="slider-card__title">ДАРИМ<br>100 БОНУСОВ!</div>
+                <div class="slider-card__subtitle">за каждые<br>10 000 ₽ в счете</div>
+                <div class="slider-card__text">*только зарегистрированным <br>пользователям, оформившим <br>заказ на сайте</div>
+              </div>
+            </div>
+            <div class="slider-card__logo-bg"></div>
+          </div>
+          <div class="slider-card">
+            <div class="slider-card__bg"></div>
+            <div class="slider-card__content">
+              <div class="slider-card__top">
+                <button class="slider-card__tag">Акции и бонусы</button>
+                <div class="slider-card__controls">
+                  <span class="slider-card__nav slider-card__nav--prev">Назад</span>
+                  <span class="slider-card__dots">
+                    <span class="slider-card__dot"></span>
+                    <span class="slider-card__dot active"></span>
+                  </span>
+                  <span class="slider-card__nav slider-card__nav--next">Дальше</span>
+                </div>
+              </div>
+              <div class="slider-card__main">
+                <div class="slider-card__title">ДАРИМ<br>100 БОНУСОВ!</div>
+                <div class="slider-card__subtitle">за каждые<br>10 000 ₽ в счете</div>
+                <div class="slider-card__text">*только зарегистрированным пользователям, оформившим заказ на сайте</div>
+              </div>
+            </div>
+            <div class="slider-card__logo-bg"></div>
+          </div>
+        </div>
+        <div class="mobile-slider">
+          <div class="mobile-slider-track">
+            <div class="mobile-slider-card">
+              <button class="mobile-slider-tag">Акции и бонусы</button>
+              <div class="mobile-slider-title">ДАРИМ<br>100 БОНУСОВ!</div>
+              <div class="mobile-slider-subtitle">за каждые<br>10 000 ₽ в счете</div>
+              <div class="mobile-slider-text">*только зарегистрированным пользователям, оформившим заказ на сайте</div>
+            </div>
+            <div class="mobile-slider-card">
+              <button class="mobile-slider-tag">Акции и бонусы</button>
+              <div class="mobile-slider-title">ДАРИМ<br>100 БОНУСОВ!</div>
+              <div class="mobile-slider-subtitle">за каждые<br>10 000 ₽ в счете</div>
+              <div class="mobile-slider-text">*только зарегистрированным пользователям, оформившим заказ на сайте</div>
+            </div>
+          </div>
+                        <div class="slider-nav">
+                <span class="slider-nav-btn mobile-slider-prev">Назад</span>
+                <span class="slider-dots mobile-slider-dots"></span>
+                <span class="slider-nav-btn mobile-slider-next">Дальше</span>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why Us Section -->
+    <section class="why-us">
+      <div class="why-us__bg"></div>
+      <h2 class="why-us__title">ПОЧЕМУ С НАМИ ВЫГОДНО?</h2>
+      <div class="why-us__grid">
+        <div class="why-us__card">
+          <img src="image/why_mi/price.svg" alt="price icon" class="why-us__icon">
+          <div class="why-us__card-content">
+            <div class="why-us__subtitle">Конкурентные цены</div>
+            <div class="why-us__text">За счет собственного производства и сотрудничества с крупнейшими производителями упаковочных материалов</div>
+          </div>
+        </div>
+        <div class="why-us__card">
+          <img src="image/why_mi/overPrice.svg" alt="lock icon" class="why-us__icon">
+          <div class="why-us__card-content">
+            <div class="why-us__subtitle">Никаких сверхнаценок</div>
+            <div class="why-us__text">Отпускные цены зависят только от двух факторов: общий объем заказа и текущие рыночные условия (цены на сырье)</div>
+          </div>
+        </div>
+        <div class="why-us__card">
+          <img src="image/why_mi/chetco.svg" alt="shield icon" class="why-us__icon">
+          <div class="why-us__card-content">
+            <div class="why-us__subtitle">Честно и надёжно</div>
+            <div class="why-us__text">Мы гарантируем соответствие заявленных параметров упаковки фактическим</div>
+          </div>
+        </div>
+        <div class="why-us__card">
+          <img src="image/why_mi/profit.svg" alt="info icon" class="why-us__icon">
+          <div class="why-us__card-content">
+            <div class="why-us__subtitle">Полезно и доступно</div>
+            <div class="why-us__text">Раскроем все хитрости упаковочного бизнеса. Ни один недобросовестный поставщик не сможет Вас обмануть!</div>
+          </div>
+        </div>
+        <div class="why-us__card">
+          <img src="image/why_mi/delivery.svg" alt="box icon" class="why-us__icon">
+          <div class="why-us__card-content">
+            <div class="why-us__subtitle">Бесплатная доставка</div>
+            <div class="why-us__text">Грамотно выстроенная логистика, наличие собственного автопарка и штатных водителей-экспедиторов</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-us__slider">
+        <div class="why-us__slider-track">
+          <div class="why-us__card">
+            <img src="image/why_mi/price.svg" alt="price icon" class="why-us__icon">
+            <div class="why-us__card-content">
+              <div class="why-us__subtitle">Конкурентные цены</div>
+              <div class="why-us__text">За счет собственного производства и сотрудничества с крупнейшими производителями упаковочных материалов</div>
+            </div>
+          </div>
+          <div class="why-us__card">
+            <img src="image/why_mi/overPrice.svg" alt="lock icon" class="why-us__icon">
+            <div class="why-us__card-content">
+              <div class="why-us__subtitle">Никаких сверхнаценок</div>
+              <div class="why-us__text">Отпускные цены зависят только от двух факторов: общий объем заказа и текущие рыночные условия (цены на сырье)</div>
+            </div>
+          </div>
+          <div class="why-us__card">
+            <img src="image/why_mi/chetco.svg" alt="shield icon" class="why-us__icon">
+            <div class="why-us__card-content">
+              <div class="why-us__subtitle">Честно и надёжно</div>
+              <div class="why-us__text">Мы гарантируем соответствие заявленных параметров упаковки фактическим</div>
+            </div>
+          </div>
+          <div class="why-us__card">
+            <img src="image/why_mi/profit.svg" alt="info icon" class="why-us__icon">
+            <div class="why-us__card-content">
+              <div class="why-us__subtitle">Полезно и доступно</div>
+              <div class="why-us__text">Раскроем все хитрости упаковочного бизнеса. Ни один недобросовестный поставщик не сможет Вас обмануть!</div>
+            </div>
+          </div>
+          <div class="why-us__card">
+            <img src="image/why_mi/delivery.svg" alt="box icon" class="why-us__icon">
+            <div class="why-us__card-content">
+              <div class="why-us__subtitle">Бесплатная доставка</div>
+              <div class="why-us__text">Грамотно выстроенная логистика, наличие собственного автопарка и штатных водителей-экспедиторов</div>
+            </div>
+          </div>
+        </div>
+                    <div class="slider-nav">
+              <span class="slider-nav-btn why-us__slider-prev">Назад</span>
+              <span class="slider-dots why-us__slider-dots"></span>
+              <span class="slider-nav-btn why-us__slider-next">Дальше</span>
+            </div>
+      </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog">
+      <h2 class="catalog__title">КАТАЛОГ</h2>
+      <div class="catalog__grid" id="catalogGrid"></div>
+      <div class="catalog__slider">
+        <div class="catalog__slider-track">
+          <div class="catalog__card">
+            <div class="catalog__icon-wrap">
+              <img src="image/image_top_tab/logo.svg" alt="logo" class="catalog__icon">
+            </div>
+            <div class="catalog__card-content">
+              <div class="catalog__name">добавьте название товара</div>
+              <div class="catalog__price">цена товара</div>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <div class="catalog__icon-wrap">
+              <img src="image/image_top_tab/logo.svg" alt="logo" class="catalog__icon">
+            </div>
+            <div class="catalog__card-content">
+              <div class="catalog__name">добавьте название товара</div>
+              <div class="catalog__price">цена товара</div>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <div class="catalog__icon-wrap">
+              <img src="image/image_top_tab/logo.svg" alt="logo" class="catalog__icon">
+            </div>
+            <div class="catalog__card-content">
+              <div class="catalog__name">добавьте название товара</div>
+              <div class="catalog__price">цена товара</div>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <div class="catalog__icon-wrap">
+              <img src="image/image_top_tab/logo.svg" alt="logo" class="catalog__icon">
+            </div>
+            <div class="catalog__card-content">
+              <div class="catalog__name">добавьте название товара</div>
+              <div class="catalog__price">цена товара</div>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <div class="catalog__icon-wrap">
+              <img src="image/image_top_tab/logo.svg" alt="logo" class="catalog__icon">
+            </div>
+            <div class="catalog__card-content">
+              <div class="catalog__name">добавьте название товара</div>
+              <div class="catalog__price">цена товара</div>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <div class="catalog__icon-wrap">
+              <img src="image/image_top_tab/logo.svg" alt="logo" class="catalog__icon">
+            </div>
+            <div class="catalog__card-content">
+              <div class="catalog__name">добавьте название товара</div>
+              <div class="catalog__price">цена товара</div>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <div class="catalog__icon-wrap">
+              <img src="image/image_top_tab/logo.svg" alt="logo" class="catalog__icon">
+            </div>
+            <div class="catalog__card-content">
+              <div class="catalog__name">добавьте название товара</div>
+              <div class="catalog__price">цена товара</div>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <div class="catalog__icon-wrap">
+              <img src="image/image_top_tab/logo.svg" alt="logo" class="catalog__icon">
+            </div>
+            <div class="catalog__card-content">
+              <div class="catalog__name">добавьте название товара</div>
+              <div class="catalog__price">цена товара</div>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <div class="catalog__icon-wrap">
+              <img src="image/image_top_tab/logo.svg" alt="logo" class="catalog__icon">
+            </div>
+            <div class="catalog__card-content">
+              <div class="catalog__name">добавьте название товара</div>
+              <div class="catalog__price">цена товара</div>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <div class="catalog__icon-wrap">
+              <img src="image/image_top_tab/logo.svg" alt="logo" class="catalog__icon">
+            </div>
+            <div class="catalog__card-content">
+              <div class="catalog__name">добавьте название товара</div>
+              <div class="catalog__price">цена товара</div>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <div class="catalog__icon-wrap">
+              <img src="image/image_top_tab/logo.svg" alt="logo" class="catalog__icon">
+            </div>
+            <div class="catalog__card-content">
+              <div class="catalog__name">добавьте название товара</div>
+              <div class="catalog__price">цена товара</div>
+            </div>
+          </div>
+        </div>
+                    <div class="slider-nav">
+              <span class="slider-nav-btn catalog__slider-prev">Назад</span>
+              <span class="slider-dots catalog__slider-dots"></span>
+              <span class="slider-nav-btn catalog__slider-next">Дальше</span>
+            </div>
+      </div>
+    </section>
+
+    <!-- Popular Items Section -->
+    <section class="popular-items">
+      <h2 style="font-family: 'inter', sans-serif;" class="popular-items__title">ПОПУЛЯРНЫЕ ПОЗИЦИИ</h2>
+      <div class="popular-slider__wrapper">
+        <div class="popular-slider-mobile">
+          <div class="popular-slider-mobile-track"></div>
+                      <div class="slider-nav">
+              <span class="slider-nav-btn popular-slider-mobile-prev">Назад</span>
+              <span class="slider-dots popular-slider-mobile-dots"></span>
+              <span class="slider-nav-btn popular-slider-mobile-next">Дальше</span>
+            </div>
+        </div>
+        <div class="popular-slider" id="popularSlider">
+          <div class="popular-card">
+            <div class="catalog__icon-wrap">
+              <img src="image/image_top_tab/logo.svg" alt="logo" class="catalog__icon">
+            </div>
+            <div class="catalog__card-content">
+              <div class="catalog__name">Скотч упаковочный</div>
+              <div class="catalog__price">120 ₽</div>
+            </div>
+          </div>
+          <div class="popular-card">
+            <div class="catalog__icon-wrap">
+              <img src="image/image_top_tab/logo.svg" alt="logo" class="catalog__icon">
+            </div>
+            <div class="catalog__card-content">
+              <div class="catalog__name">Стрейч-пленка</div>
+              <div class="catalog__price">350 ₽</div>
+            </div>
+          </div>
+          <div class="popular-card">
+            <div class="catalog__icon-wrap">
+              <img src="image/image_top_tab/logo.svg" alt="logo" class="catalog__icon">
+            </div>
+            <div class="catalog__card-content">
+              <div class="catalog__name">Пакеты с логотипом</div>
+              <div class="catalog__price">от 2,5 ₽</div>
+            </div>
+          </div>
+          <div class="popular-card">
+            <div class="catalog__icon-wrap">
+              <img src="image/image_top_tab/logo.svg" alt="logo" class="catalog__icon">
+            </div>
+            <div class="catalog__card-content">
+              <div class="catalog__name">Картонные коробки</div>
+              <div class="catalog__price">от 15 ₽</div>
+            </div>
+          </div>
+          <div class="popular-card">
+            <div class="catalog__icon-wrap">
+              <img src="image/image_top_tab/logo.svg" alt="logo" class="catalog__icon">
+            </div>
+            <div class="catalog__card-content">
+              <div class="catalog__name">Пленка пузырчатая</div>
+              <div class="catalog__price">от 80 ₽</div>
+            </div>
+          </div>
+          <div class="popular-card">
+            <div class="catalog__icon-wrap">
+              <img src="image/image_top_tab/logo.svg" alt="logo" class="catalog__icon">
+            </div>
+            <div class="catalog__card-content">
+              <div class="catalog__name">Клейкая лента</div>
+              <div class="catalog__price">от 60 ₽</div>
+            </div>
+          </div>
+          <div class="popular-card">
+            <div class="catalog__icon-wrap">
+              <img src="image/image_top_tab/logo.svg" alt="logo" class="catalog__icon">
+            </div>
+            <div class="catalog__card-content">
+              <div class="catalog__name">Пакеты майка</div>
+              <div class="catalog__price">от 1,8 ₽</div>
+            </div>
+          </div>
+          <div class="popular-card">
+            <div class="catalog__icon-wrap">
+              <img src="image/image_top_tab/logo.svg" alt="logo" class="catalog__icon">
+            </div>
+            <div class="catalog__card-content">
+              <div class="catalog__name">Пакеты с замком</div>
+              <div class="catalog__price">от 3 ₽</div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-nav">
+          <span class="slider-nav-btn popular-slider__nav-prev">Назад</span>
+          <span class="slider-dots popular-slider__dots" id="popularSliderDots"></span>
+          <span class="slider-nav-btn popular-slider__nav-next">Дальше</span>
+        </div>
+        <button class="popular-slider__btn">Скачать каталог</button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+      <!-- Десктопная версия -->
+      <div class="about-desktop-blocks">
+        <div class="about-images-row">
+          <img src="./image/image_o_nas/long_pic.png" class="about-img" alt="about4" />
+          <img src="./image/image_o_nas/short1.png" class="about-img" alt="about1" />
+          <img src="./image/image_o_nas/short2.png" class="about-img" alt="about2" />
+          <img src="./image/image_o_nas/short3.png" class="about-img" alt="about3" />
+        </div>
+        <div class="about-bottom-row">
+          <div class="about-left">
+            <div class="about-title">Мы прошли большой путь от маленькой торговой фирмы до успешной торгово-производственной компании</div>
+            <div class="about-subtitle">Благодаря глубоким техническим знаниям, успешному долгосрочному сотрудничеству с крупнейшими заводами-производителями упаковочных материалов, а также эффективному управлению цепочкой поставок.</div>
+            <div class="about-consult-card">
+              <div class="about-consult-content">
+                <div class="about-consult-text">Получите бесплатную <br>консультацию от ПакПакча<br> и не переплачивайте за упаковку</div>
+                <button class="about-consult-btn modal-btn" data-call>Получить консультацию</button>
+              </div>
+            </div>
+          </div>
+          <div class="about-benefits">
+            <div class="about-benefits-row top">
+              <div class="about-benefit-card">
+                <div class="about-benefit-num">10</div>
+                <div class="about-benefit-title">лет опыта</div>
+                <div class="about-benefit-desc">Успешной и бесперебойной работы на рынке упаковки</div>
+              </div>
+              <div class="about-benefit-card">
+                <div class="about-benefit-num">50 000</div>
+                <div class="about-benefit-title">тонн плёнки</div>
+                <div class="about-benefit-desc">Реализовано по состоянию на 2025 год</div>
+              </div>
+              <div class="about-benefit-card">
+                <div class="about-benefit-num">80%</div>
+                <div class="about-benefit-title">заказов</div>
+                <div class="about-benefit-desc">Доставляется на следующий день</div>
+              </div>
+            </div>
+            <div class="about-benefits-row bottom">
+              <div class="about-benefit-card">
+                <div class="about-benefit-num">1 300</div>
+                <div class="about-benefit-title">предприятий</div>
+                <div class="about-benefit-desc">Сотрудничают с нами по состоянию на 2025 год</div>
+              </div>
+              <div class="about-benefit-card">
+                <div class="about-benefit-num">1 500</div>
+                <div class="about-benefit-title">наименований</div>
+                <div class="about-benefit-desc">Всегда в наличии на складе и доступны для самовывоза</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Мобильная версия -->
+      <div class="about-mobile-blocks">
+        <div class="about-images-slider-mobile">
+          <div class="about-images-slider-mobile-track">
+            <div class="about-image-card"><img src="./image/image_o_nas/long_pic.png" class="about-img" alt="about4" /></div>
+            <div class="about-image-card"><img src="./image/image_o_nas/short1.png" class="about-img" alt="about1" /></div>
+            <div class="about-image-card"><img src="./image/image_o_nas/short2.png" class="about-img" alt="about2" /></div>
+            <div class="about-image-card"><img src="./image/image_o_nas/short3.png" class="about-img" alt="about3" /></div>
+          </div>
+                        <div class="slider-nav">
+                <span class="slider-nav-btn about-images-slider-mobile-prev">Назад</span>
+                <span class="slider-dots about-images-slider-mobile-dots"></span>
+                <span class="slider-nav-btn about-images-slider-mobile-next">Дальше</span>
+              </div>
+        </div>
+        <div class="about-text-mobile">
+          <div class="about-title">Мы прошли большой путь от маленькой торговой фирмы до успешной торгово-производственной компании</div>
+          <div class="about-subtitle">Благодаря глубоким техническим знаниям, успешному долгосрочному сотрудничеству с крупнейшими заводами-производителями упаковочных материалов, а также эффективному управлению цепочкой поставок.</div>
+          <div class="about-consult-card">
+            <div class="about-consult-content">
+              <div class="about-consult-text">Получите бесплатную <br>консультацию от ПакПакча<br> и не переплачивайте за упаковку</div>
+              <button class="about-consult-btn modal-btn" data-call>Получить консультацию</button>
+            </div>
+          </div>
+        </div>
+        <div class="about-benefits-slider">
+          <div class="about-benefits-slider-track">
+            <div class="about-benefit-card">
+              <div class="about-benefit-num">10</div>
+              <div class="about-benefit-title">лет опыта</div>
+              <div class="about-benefit-desc">Успешной и бесперебойной работы на рынке упаковки</div>
+            </div>
+            <div class="about-benefit-card">
+              <div class="about-benefit-num">50 000</div>
+              <div class="about-benefit-title">тонн плёнки</div>
+              <div class="about-benefit-desc">Реализовано по состоянию на 2025 год</div>
+            </div>
+            <div class="about-benefit-card">
+              <div class="about-benefit-num">80%</div>
+              <div class="about-benefit-title">заказов</div>
+              <div class="about-benefit-desc">Доставляется на следующий день</div>
+            </div>
+            <div class="about-benefit-card">
+              <div class="about-benefit-num">1 300</div>
+              <div class="about-benefit-title">предприятий</div>
+              <div class="about-benefit-desc">Сотрудничают с нами по состоянию на 2025 год</div>
+            </div>
+            <div class="about-benefit-card">
+              <div class="about-benefit-num">1 500</div>
+              <div class="about-benefit-title">наименований</div>
+              <div class="about-benefit-desc">Всегда в наличии на складе и доступны для самовывоза</div>
+            </div>
+          </div>
+                      <div class="slider-nav">
+              <span class="slider-nav-btn about-benefits-slider-prev">Назад</span>
+              <span class="slider-dots about-benefits-slider-dots"></span>
+              <span class="slider-nav-btn about-benefits-slider-next">Дальше</span>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bc_video">
+      <div class="bc-video-bg">
+        <button class="bc-video-btn" id="bcVideoBtn">
+          Смотреть ролик о нас
+          <span class="bc-video-play">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="11" cy="11" r="11" fill="#FFD700"/>
+              <polygon points="9,7 16,11 9,15" fill="#222"/>
+            </svg>
+          </span>
+        </button>
+        <div class="bc-video-frame" id="bcVideoFrame" style="display:none;">
+          <video controls src="https://drive.google.com/uc?export=download&id=1Qw2Qw3Qw4Qw5Qw6Qw7Qw8Qw9Qw0Qw1Q" width="100%" height="100%" style="border-radius:16px; background:#000;"></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-to-order">
+      <h2 class="how-order-title">КАК ЗАКАЗАТЬ</h2>
+      <div class="how-order-subtitle">«Пак Пакыч» работает с физическими и юридическими лицами на условиях 100% предоплаты. Отсрочка платежа возможна после проверки реквизитов и согласования с руководством. Условия оплаты обсуждаются с менеджером при оформлении заказа.</div>
+      <div class="how-order-grid">
+        <div class="how-order-card">
+          <img src="./image/why_buy/box.svg" class="how-order-icon" alt="Заказ" />
+          <div class="how-order-card-content">
+            <div class="how-order-card-title">Заказ</div>
+            <div class="how-order-card-desc">Сформируйте заказ на сайте и ожидайте звонка менеджера</div>
+          </div>
+        </div>
+        <div class="how-order-card">
+          <img src="./image/why_buy/odobrenie.svg" class="how-order-icon" alt="Согласование" />
+          <div class="how-order-card-content">
+            <div class="how-order-card-title">Согласование</div>
+            <div class="how-order-card-desc">Дождитесь звонка менеджера для подтверждения заказа, обсуждения условий, оплаты и доставки</div>
+          </div>
+        </div>
+        <div class="how-order-card">
+          <img src="./image/why_buy/ruble.svg" class="how-order-icon" alt="Счет" />
+          <div class="how-order-card-content">
+            <div class="how-order-card-title">Счет</div>
+            <div class="how-order-card-desc">Получите счет для оплаты и направленный в электронном виде договор</div>
+          </div>
+        </div>
+        <div class="how-order-card">
+          <img src="./image/why_buy/terminal.svg" class="how-order-icon" alt="Оплата" />
+          <div class="how-order-card-content">
+            <div class="how-order-card-title">Оплата</div>
+            <div class="how-order-card-desc">Оплатите заказ (если договор не предусматривает отсрочку платежа)</div>
+          </div>
+        </div>
+        <div class="how-order-card">
+          <img src="./image/why_buy/car.svg" class="how-order-icon" alt="Отгрузка" />
+          <div class="how-order-card-content">
+            <div class="how-order-card-title">Отгрузка</div>
+            <div class="how-order-card-desc">Получите товар любым удобным способом</div>
+          </div>
+        </div>
+       
+      </div>
+      <div class="how-order-slider-mobile">
+        <div class="how-order-slider-mobile-track">
+          <!-- Карточки будут вставляться сюда -->
+        </div>
+                    <div class="slider-nav">
+              <span class="slider-nav-btn how-order-slider-mobile-prev">Назад</span>
+              <span class="slider-dots how-order-slider-mobile-dots"></span>
+              <span class="slider-nav-btn how-order-slider-mobile-next">Дальше</span>
+            </div>
+      </div>
+    </section>
+
+    <section class="useful-block">
+      <h2 class="useful-title">КОМУ БУДЕТ ПОЛЕЗЕН НАШ РЕСУРС</h2>
+      <div class="useful-row">
+        <div class="useful-card">
+          <div class="useful-card-title">Менеджерам по закупкам</div>
+          <ol class="useful-list">
+            <li>Ознакомитесь с широким ассортиментом упаковочной продукции</li>
+            <li>Найдёте выгодное и качественное предложение</li>
+            <li>Всегда сможете сравнить цены на привычный объём закупки исходя из рыночных реалий</li>
+            <li>Оперативная поддержка на всех этапах оформления заказа</li>
+          </ol>
+          <div class="useful-other">Производителям товаров<br>Собственникам бизнеса<br>Транспортным компаниям<br>Розничным продавцам<br>Физическим лицам</div>
+        </div>
+        <div class="useful-img-wrap">
+          <img src="./image/why_buy/picInRight.png" class="useful-img" alt="Кому полезен ресурс" />
+        </div>
+      </div>
+    </section>
+
+    <section class="mission-block">
+      <div class="mission-left">
+        <div class="mission-title">МИССИЯ ПАК ПАКЫЧА</div>
+        <div class="mission-subtitle">Способствовать устойчивому развитию предприятий</div>
+        <div class="mission-desc">Которые используют в своей деятельности упаковочный материал,<br> отстаивать принципы добросовестности, надёжности и честности <br>среди поставщиков упаковочных материалов!</div>
+        <div class="mission-quote">
+          <div class="mission-quote-svg-wrap">
+            <img src="fonts/Group 18.svg" class="mission-quote-logo-svg" alt="logo" />
+          </div>
+        </div>
+      </div>
+      <form class="mission-form" id="missionForm" autocomplete="off">
+        <div class="mission-form-content">
+          <div class="mission-form-title">Оставьте Ваши контакты<br>и мы отправим Вам файл на почту!</div>
+          <div class="mission-form-fields">
+            <input type="email" class="mission-input" placeholder="Email:" required />
+            <input type="tel" class="mission-input" placeholder="Телефон:" required />
+          </div>
+          <div class="mission-form-bottom">
+            <button type="submit" class="mission-btn">Получить консультацию</button>
+            <label class="mission-checkbox-wrap">
+              <input type="checkbox" name="policy" required />
+              <span class="mission-checkbox"></span>
+              <span class="mission-checkbox-label">Я согласен с политикой конфиденциальности</span>
+            </label>
+          </div>
+        </div>
+        <img src="./image/why_buy/send.svg" class="mission-send-img" alt="Отправить" />
+      </form>
+    </section>
+
+    <section class="reviews-section">
+      <h2 class="reviews-title">ОТЗЫВЫ</h2>
+      <div class="reviews-slider-wrap">
+        <div class="reviews-slider" id="reviewsSlider">
+          <!-- Отзывы будут добавлены через JS -->
+        </div>
+        <div class="reviews-nav">
+          <span class="reviews-nav-btn reviews-nav-prev">Назад</span>
+          <span class="reviews-dots" id="reviewsDots"></span>
+          <span class="reviews-nav-btn reviews-nav-next">Дальше</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-block">
+      <div class="contact-block__content">
+        <h2 class="contact-block__title">Остались вопросы?<br>Свяжитесь с нами</h2>
+        <div class="contact-block__subtitle">Проконсультируем и поможем<br>с выбором упаковки для вашего бизнеса</div>
+        <div class="contact-block__actions">
+          <button class="contact-block__btn">
+            Написать нам
+            <img src="fonts/telegram.svg" alt="tg" class="contact-block__icon">
+            <img src="fonts/Whatsapp.svg" alt="wa" class="contact-block__icon">
+          </button>
+          <label class="contact-block__checkbox-label">
+            <input type="checkbox" name="policy" class="contact-block__checkbox">
+            Я согласен с политикой конфиденциальности
+          </label>
+        </div>
+      </div>
+      <div class="contact-block__bg"></div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="footer-wrapper">
+        <div class="footer-info-block">
+          <div class="footer-title-block">
+            <div class="footer-title">КАК НАС НАЙТИ</div>
+          </div>
+          <div class="footer-main-info">
+            <div class="footer-menu-block">
+              <a href="#" class="footer-menu-link">Главная</a>
+              <a href="#" class="footer-menu-link">Каталог</a>
+              <a href="#" class="footer-menu-link">О нас</a>
+              <a href="#" class="footer-menu-link">Отзывы</a>
+              <a href="#" class="footer-menu-link">Как заказать</a>
+            </div>
+            <div class="footer-contacts-block">
+              <div class="footer-contacts-table">
+                <div class="footer-contacts-row">
+                  <div class="footer-contacts-cell">
+                    <img src="image/footer/location.svg" class="footer-icon" alt="address">
+                    г. Ивантеевка, ул. Толмачева, д. 92с2;<br>
+                    г. Ивантеевка, ул. Толмачева, д. 27К14 (офис)
+                  </div>
+                  <div class="footer-contacts-cell">
+                    <img src="image/footer/time.svg" class="footer-icon" alt="time">
+                    Пн-Чт: 9:00-17:00<br>Пт: 9:00-16:00
+                  </div>
+                </div>
+                <div class="footer-contacts-row">
+                  <div class="footer-contacts-cell">
+                    <img src="image/footer/mail.svg" class="footer-icon" alt="mail">
+                    <a href="mailto:info@pakpakyc.ru">info@pakpakyc.ru</a>
+                  </div>
+                  <div class="footer-contacts-cell">
+                    <img src="image/footer/phone.svg" class="footer-icon" alt="phone">
+                    <a href="tel:+74951201251">+7 (495) 120 12 51</a>
+                  </div>
+                </div>
+                <div class="footer-contacts-row">
+                  <div class="footer-contacts-cell">
+                    <a href="#" class="footer-social"><img src="fonts/telegram.svg" alt="tg"></a>
+                    pakpakycru
+                  </div>
+                  <div class="footer-contacts-cell">
+                    <a href="#" class="footer-social"><img src="fonts/Whatsapp.svg" alt="wa"></a>
+                    pakpakycru
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom-info">
+            <img src="./image/image_top_tab/logo.svg" alt="Logo" class="footer-logo" />
+            <button class="footer-callback-btn" onclick="openModal('callModal')">Перезвонить мне</button>
+            <button class="footer-map-btn" onclick="openMapModal()" style="display: none;">Показать карту</button>
+            <div class="footer-policy-block-f">
+              <a href="#" class="footer-policy">Политика конфиденциальности</a>
+              <span>©2024 «Самоклейка»</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-map-block">
+          <img src="image/footer/locationImag.png" class="footer-map-img" alt="map">
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay" style="display:none;"></div>
+    <div class="modal-window call-modal" id="callModal" style="display:none;">
+      <button class="modal-close" id="callModalClose" aria-label="Закрыть">&times;</button>
+      <div class="modal-content modal-content-yellow">
+        <div class="modal-content-left">
+          <div class="modal-title">Оставьте Ваши контакты<br>и мы отправим перезвоним Вам!</div>
+          <form class="modal-form" id="callForm">
+            <div class="modal-form-fields">
+              <input type="text" class="modal-input" placeholder="Ваше имя:" required>
+              <input type="tel" class="modal-input" placeholder="Телефон:" required>
+            </div>
+            <div class="modal-form-bottom">
+              <button type="submit" class="modal-btn">Заказать звонок</button>
+              <label class="modal-checkbox-label">
+                <input type="checkbox" name="policy" required>
+                <span>Я согласен с политикой конфиденциальности</span>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-content-right modal-bg-call"></div>
+      </div>
+    </div>
+    <div class="modal-window order-modal" id="orderModal" style="display:none;">
+      <button class="modal-close" id="orderModalClose" aria-label="Закрыть">&times;</button>
+      <div class="modal-content modal-content-yellow">
+        <div class="modal-content-left">
+          <div class="modal-title">Оставьте Ваши контакты<br>и мы свяжемся с Вами<br>для оформления заказа!</div>
+          <form class="modal-form" id="orderForm">
+            <div class="modal-form-fields">
+              <input type="text" class="modal-input" placeholder="Ваше имя:" required>
+              <input type="tel" class="modal-input" placeholder="Телефон:" required>
+            </div>
+            <div class="modal-form-bottom">
+              <button type="submit" class="modal-btn">Оформить заказ</button>
+              <label class="modal-checkbox-label">
+                <input type="checkbox" name="policy" required>
+                <span>Я согласен с политикой конфиденциальности</span>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-content-right modal-bg-order"></div>
+      </div>
+    </div>
+    <div class="modal-window thank-modal" id="thankModal" style="display:none;">
+      <button class="modal-close" id="thankModalClose" aria-label="Закрыть">&times;</button>
+      <div class="modal-content modal-content-thank">
+        <div class="modal-title">Спасибо!<br>Ваша заявка отправлена.</div>
+        <div class="modal-thank-text">Мы свяжемся с вами в ближайшее время.</div>
+        <button class="modal-btn modal-btn-thank" onclick="closeModal()">Закрыть</button>
+      </div>
+    </div>
+
+    <!-- Модальное окно Инфо -->
+    <div class="modal-overlay info-modal-overlay" id="infoModalOverlay" style="display: none;">
+      <div class="info-modal" id="infoModal">
+        <button class="info-modal-close" onclick="closeInfoModal()">&times;</button>
+        <div class="info-modal-title">Контактная информация</div>
+        <div class="info-modal-content">
+          <div class="info-modal-item">
+            <img src="./image/footer/phone.svg" alt="phone" class="info-modal-icon">
+            <span>+7 (XXX) XXX-XX-XX</span>
+          </div>
+          <div class="info-modal-item">
+            <img src="./image/footer/mail.svg" alt="email" class="info-modal-icon">
+            <span>info@pakpakych.ru</span>
+          </div>
+          <div class="info-modal-item">
+            <img src="./image/footer/location.svg" alt="address" class="info-modal-icon">
+            <span>г. Москва, ул. Примерная, д. 1</span>
+          </div>
+          <div class="info-modal-item">
+            <img src="./image/footer/time.svg" alt="time" class="info-modal-icon">
+            <span>Пн-Пт: 9:00-18:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map Modal -->
+    <div class="map-modal-overlay" id="mapModalOverlay">
+      <div class="map-modal">
+        <button class="map-modal-close" onclick="closeMapModal()">×</button>
+        <div class="map-modal-title">Наше местоположение</div>
+        <div class="map-modal-content">
+          <img src="./image/footer/locationImag.png" alt="Карта" class="map-modal-img" />
+          <div class="map-modal-address">
+            Адрес: г. Москва, ул. Примерная, д. 123
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
